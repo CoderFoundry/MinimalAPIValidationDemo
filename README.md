@@ -1,8 +1,8 @@
 # Minimal API Validation Demo
 
-## Explore the powerful new model validation features introduced in .NET 10 Preview—combine familiar DataAnnotations with cutting-edge source-generated validators to enforce rules automatically and keep your Minimal APIs rock-solid from day one. 🚀
+ Explore the powerful new model validation features introduced in .NET 10 Preview—combine familiar DataAnnotations with cutting-edge source-generated validators to enforce rules automatically and keep your Minimal APIs rock-solid from day one. 🚀
 
-### 🎥 Video Tutorial
+## 🎥 Video Tutorial
 
 Watch the step-by-step walkthrough on YouTube:
 
@@ -10,13 +10,13 @@ Watch the step-by-step walkthrough on YouTube:
 
 Replace YOUR_VIDEO_ID with your actual YouTube video ID.
 
-### 🚀 Prerequisites
+## 🚀 Prerequisites
 
 .NET 10 Preview 4 or later SDK
 
 Visual Studio 2022 Preview (v17.9+) or Visual Studio Code with the latest C# extension
 
-### 🛠️ Configuration
+## 🛠️ Configuration
 
 Pre-configured in this repo: source-generated validation and the Scalar testing UI are already set up. The steps below show how you would enable validation in a new project.
 
@@ -36,20 +36,20 @@ builder.Services.AddValidation();
 
 var app = builder.Build();
 ```
-### 📦 Installation & Build
+## 📦 Installation & Build
 
-# Restore and build
+## Restore and build
 ```
 dotnet restore
 dotnet build
 ```
-### 📂 Project Structure
+## 📂 Project Structure
 ```
 Data/: Contains the OrderService implementation and sample data.
 
 Models/: Holds the Order.cs class decorated with DataAnnotations for validation.
 ```
-### 📝 API Docs & Interactive UI
+## 📝 API Docs & Interactive UI
 
 The API documentation and built-in testing UI are preconfigured. To use:
 
@@ -64,7 +64,7 @@ app.MapScalarApiReference("/", opt =>
     opt.Theme = ScalarTheme.Mars;
 });
 ```
-### 🔗 Links & Resources
+## 🔗 Links & Resources
 
 [.NET DataAnnotations Documentation](https://learn.microsoft.com/en-us/aspnet/core/mvc/models/validation?view=aspnetcore-9.0)
 
