@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace MinimalAPIValidationDemo.Models;
-public class Order 
+public record Order 
 {
    
     public required string CustomerName { get; set; }

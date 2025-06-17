@@ -5,19 +5,16 @@ using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddSingleton<OrderService>();
 
 builder.Services.AddValidation();
 
-//interceptors namespaces for validation must included in the property group in the project file
+// validation interceptors namespace must be included in the property group in the csproj file
 //<InterceptorsNamespaces>$(InterceptorsNamespaces);Microsoft.AspNetCore.Http.Validation.Generated</InterceptorsNamespaces>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 app.MapOpenApi();
 app.MapScalarApiReference("/", opt => 
 { 
